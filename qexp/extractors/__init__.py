@@ -1,0 +1,4 @@
+from .SparqlExtractor import SubjectExtractor
+from .SpotlightExtractor import SpotlightExtractor
+from .WikipediaExtractor import WikipediaCategorySampler, WikipediaRevisionExtractor
+from .WikitextExtractor import WikitextExtractor

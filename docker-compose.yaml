@@ -1,0 +1,7 @@
+---
+services:
+  redis:
+    image: redis
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:6379:6379"

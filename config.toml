@@ -1,0 +1,33 @@
+# python parses this as ini, but the structure is so similar to TOML that we
+# can restrict ourselves to the common subset, and migrate to TOML for Python
+# 3.11 availability
+[cache]
+dir = "./data/"
+
+[data]
+data_path = "./data/"
+kg_path = "./data/graph.pickle"
+profiles_dump = "./data/profiles.pickle"
+article_path = "./data/ambiguous_articles.csv"
+links_dump = "./data/ambiguous_pages_links.pickle"
+search_config = "./data/search_test.csv"
+extracts_path = "./data/_extracts/"
+clean_path = "./data/_cleaned/"
+category_path = "./data/_categories/"
+surface_term_path = "./data/_surface_terms/"
+subject_path = "./data/_subjects/"
+model_path = "./models/"
+links_path = "./data/_links/"
+clickstream_path = "./data/_clickstream/"
+
+
+[results]
+user_categories = "./results/user_categories.csv"
+article_categories = "./results/article_categories.csv"
+
+[dbpedia]
+url = "http://localhost:2222/rest"
+sparql_url = "https://dbpedia.org/sparql/"
+
+[wikipedia]
+endpoint = "https://en.wikipedia.org/w/api.php"

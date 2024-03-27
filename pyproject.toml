@@ -1,0 +1,26 @@
+[tool.poetry]
+package-mode = false
+name = "publication"
+version = "0.1.0"
+description = ""
+authors = ["Oliver Baumann <oliver.baumann@uni-bayreuth.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+igraph = "^0.11.4"
+requests = "^2.31.0"
+sparqlwrapper = "^2.0.0"
+mwparserfromhell = "^0.6.6"
+isort = "^5.13.2"
+black = "^24.2.0"
+gensim = "^4.3.2"
+lunr = "^0.7.0.post1"
+nltk = "^3.8.1"
+redis = "^5.0.2"
+pandas = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
